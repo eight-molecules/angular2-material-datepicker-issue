@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  private date: Date = null;
+
+  constructor() {
+    this.date = new Date();
+  }
+  
+  log() {
+    console.log('click');
+  }
 }
